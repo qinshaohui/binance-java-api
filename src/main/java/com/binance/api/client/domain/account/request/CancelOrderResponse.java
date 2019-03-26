@@ -114,9 +114,8 @@ public class CancelOrderResponse {
     return side;
   }
 
-  public CancelOrderResponse setTransactTime(Long transactTime) {
+  public void setTransactTime(Long transactTime) {
     this.transactTime = transactTime;
-    return this;
   }
 
   public CancelOrderResponse setPrice(String price) {

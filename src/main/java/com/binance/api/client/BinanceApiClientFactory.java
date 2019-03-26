@@ -81,4 +81,8 @@ public class BinanceApiClientFactory {
   public BinanceApiWebSocketClient newWebSocketClient() {
     return new BinanceApiWebSocketClientImpl(getSharedClient());
   }
+
+  public BinanceApiWebSocketClient newWebSocketClient(String wsBaseUrl) {
+    return new BinanceApiWebSocketClientImpl(wsBaseUrl, getSharedClient());
+  }
 }
